@@ -1,11 +1,9 @@
-import Home from "../presentation/pages/Home";
-import Login from "../presentation/pages/Login";
+import { Dashboard } from "@/presentation/pages/dashboard/page";
 
 function App() {
   return (
     <div>
-      <Home />
-      <Login />
+      <Dashboard />
     </div>
   );
 }
