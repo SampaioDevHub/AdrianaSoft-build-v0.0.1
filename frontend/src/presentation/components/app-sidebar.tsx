@@ -1,7 +1,6 @@
 import * as React from "react";
 import {
   AudioWaveform,
-  BookOpen,
   Bot,
   Command,
   GalleryVerticalEnd,
@@ -13,9 +12,7 @@ import { TeamSwitcher } from "@/presentation/components/team-switcher";
 import {
   Sidebar,
   SidebarContent,
-  SidebarFooter,
   SidebarHeader,
-  SidebarRail,
 } from "@/components/ui/sidebar";
 
 // This is sample data.
@@ -51,7 +48,7 @@ const data = {
       items: [
         {
           title: "Produto",
-          url: "/frontend/src/presentation/pages/cadastro",
+          url: "/products",
         },
         {
           title: "Cliente",
@@ -64,47 +61,25 @@ const data = {
       ],
     },
     {
-      title: "Controle de Estoque",
+      title: "Administração",
       url: "#",
       icon: Bot,
       items: [
         {
-          title: "Link",
+          title: "Produto",
           url: "#",
         },
         {
-          title: "Link",
+          title: "Cliente",
           url: "#",
         },
         {
-          title: "Link",
+          title: "Fornecedor",
           url: "#",
         },
       ],
     },
-    {
-      title: "Descrição Link",
-      url: "#",
-      icon: BookOpen,
-      items: [
-        {
-          title: "Link",
-          url: "#",
-        },
-        {
-          title: "Link",
-          url: "#",
-        },
-        {
-          title: "Link",
-          url: "#",
-        },
-        {
-          title: "Link",
-          url: "#",
-        },
-      ],
-    },
+
     {
       title: "Settings",
       url: "#",
@@ -115,15 +90,11 @@ const data = {
           url: "#",
         },
         {
-          title: "Administração",
+          title: "Em Produção",
           url: "#",
         },
         {
-          title: "Carteira",
-          url: "#",
-        },
-        {
-          title: "Configuração",
+          title: "Thema",
           url: "#",
         },
       ],
@@ -139,8 +110,6 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
       <SidebarContent>
         <NavMain items={data.navMain} />
       </SidebarContent>
-      <SidebarFooter>{/*Auth Service*/}</SidebarFooter>
-      <SidebarRail />
     </Sidebar>
   );
 }
