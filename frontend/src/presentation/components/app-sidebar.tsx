@@ -1,8 +1,6 @@
 import * as React from "react";
 import {
-  AudioWaveform,
   Bot,
-  Command,
   GalleryVerticalEnd,
   Settings2,
   SquareTerminal,
@@ -27,16 +25,6 @@ const data = {
       name: "Adriana Showroom",
       logo: GalleryVerticalEnd,
       plan: "Enterprise Software",
-    },
-    {
-      name: "Acme Corp.",
-      logo: AudioWaveform,
-      plan: "Startup",
-    },
-    {
-      name: "Evil Corp.",
-      logo: Command,
-      plan: "Free",
     },
   ],
   navMain: [
